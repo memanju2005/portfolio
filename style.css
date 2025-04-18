@@ -220,7 +220,7 @@
 
 }
 .project_card img{
-    width: 500px;
+    width: 30rem;
     height: 300px;
     border-radius: 10%;
 
@@ -431,6 +431,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     }
+    
+.project_card img{
+    width: 20rem;
+}
 }
 
 
