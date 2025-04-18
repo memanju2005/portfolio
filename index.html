@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+      <!-- SEO Meta Tags -->
+  <meta name="description" content="Manjunath's personal portfolio website showcasing projects, skills, and experience in web development, AI/ML, and problem solving." />
+  <meta name="keywords" content="Manjunath, portfolio, web developer, AI, machine learning, Python, projects, software engineer, CSBS, VTU, full stack" />
+  <meta name="author" content="Manjunath" />
+  
+  <!-- Title -->
+  <title>Manjunath | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets\favicon.png" />
+  
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -23,10 +32,11 @@
             </div>
             <!-- nav clicks -->
             <div class="nav_clicks" id="navLinks">
-                <div class="nav_button">Home</div>
-                <div class="nav_button">About</div>
-                <div class="nav_button">Projects</div>
-                <div class="nav_button">Contact</div>
+                <a href="#"><div class="nav_button">Home</div></a> 
+                <a href="#about_section"><div class="nav_button">About</div></a>
+                <a href="#projects"><div class="nav_button">Projects</div></a>
+                <a href="#contact"><div class="nav_button">Contact</div></a>
+                        
             </div>
             <div class="menu-icon" id="menuIcon">
                 <i class="fas fa-bars"></i>
@@ -54,7 +64,7 @@
 
 
             </div>
-            <div class="hero_text">
+            <div class="hero_text" >
                 <h1>Hey, I'm Manjunath Kotabagi</h1>
                 <br>
                 <br>
@@ -113,7 +123,7 @@
                 <div class="skill flex">
                     <span>Frt Dev</span>
                     <div class="skill_bar_container">
-                        <div class="skill_bar" style="width: 40%" ;>40%
+                        <div class="skill_bar" style="width: 30%" ;>30%
                         </div>
                     </div>
 
@@ -133,7 +143,7 @@
         </div>
     </section>
     <section>
-        <div class="projects_container flex">
+        <div class="projects_container flex" id="projects">
             <h2>Projects</h2>
             <div class="project_card flex">
 
@@ -174,7 +184,7 @@
 
     <section>
         <footer>
-            <div class="all_footer flex">
+            <div class="all_footer flex" id="contact">
                 <h2 style="color: white;">Contact Me</h2>
                 <div class="link_container flex">
                     <div class="link_name flex">

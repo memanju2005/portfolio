@@ -9,6 +9,9 @@
     --background-color:#adc6d6;
 }
 /* Loader container */
+html {
+  scroll-behavior: smooth;
+}
 
 .loader{
     animation: rotate 2s infinite;
@@ -130,8 +133,13 @@
 .nav_clicks{
     display: flex;
     align-items: center;
+
     /* justify-content: space-around; */
 }
+.nav_clicks a{
+  text-decoration: none;
+}
+
 .nav_button{
     color: black;
     font-weight: 400;
