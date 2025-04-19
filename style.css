@@ -231,6 +231,7 @@ html {
     flex-direction: column;
     height: 60vh;
     font-size: 1.3rem; 
+    text-align: center;
 }
 .get_to_know_me p{
     margin-top: 2rem;
@@ -245,7 +246,7 @@ html {
 .skills{
     flex-direction: column;
     /* border: 2px solid red; */
-    width: 550px;
+    width: 600px;
     /* background-color: var(--background-color); */
     border-radius: 10px;
     box-shadow: 0 20px 20px var(--secondary-color);
@@ -523,6 +524,11 @@ html {
     .menu-icon {
         display: block;
     }
+    #about_section p{
+      font-size: 1.1rem;
+      
+
+    }
     .project_card{
     flex-direction: column;
     flex-wrap: wrap;
@@ -531,6 +537,16 @@ html {
 .project_card img{
     width: 20rem;
 }
+.skills{
+  width: 90vw;
+}
+.skill{
+  flex-direction: column;
+}
+.skill_bar_container{
+  width: 80vw;
+}
+
 }
 
 
