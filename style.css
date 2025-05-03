@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+  
 }
 
 :root {
@@ -197,6 +197,12 @@ p{
   margin-right: 2rem;
   cursor: pointer;
 }
+.close-icon {
+  display: none;
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
 
 .hero_part {
   height: 85vh;
@@ -293,7 +299,7 @@ p{
   width: 600px;
   /* background-color: var(--background-color); */
   border-radius: 10px;
-  box-shadow: 0 20px 20px var(--secondary-color);
+  box-shadow: 0 20px 20px var(--secondary-color); 
 
 }
 
@@ -591,15 +597,32 @@ p{
 @media screen and (max-width: 768px) {
   .nav_clicks {
     display: none;
-    flex-direction: column;
-    background-color: var(--primary-color);
     position: absolute;
-    top: 15vh;
+    flex-direction: column;
+    background-color:  var(--primary-color);
+    
+    
+    position: absolute;
+    top: 10vh;
     right: 0;
     width: 100%;
     padding: 1rem;
     border-top: 1px solid black;
     align-items: end;
+    z-index: 999;
+    animation: fade-in 1s;
+  }
+  @keyframes fade-in {
+    0%{
+      opacity: 0;
+      
+
+    }
+    100%{
+      opacity: 1;
+      
+    }
+    
   }
 
   .nav_clicks.show {
@@ -609,7 +632,16 @@ p{
   .menu-icon {
     display: block;
   }  
-  
+  .menu-icon.hide {
+    display: none;
+  }
+  .close-icon {
+    display: none;
+  }  
+  .close-icon.show {
+    display: block;
+  }
+
   #about_section p {
     font-size: 1.1rem;
 

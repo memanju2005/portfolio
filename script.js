@@ -1,8 +1,19 @@
 const menuIcon = document.getElementById("menuIcon");
+const closeIcon = document.getElementById("closeIcon");
+
 const navLinks = document.getElementById("navLinks");
 
 menuIcon.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+  console.log("clicked");
+  navLinks.classList.toggle("show");
+  menuIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("show");
+});
+closeIcon.addEventListener("click", () => {
+  console.log("clicked");
+  navLinks.classList.toggle("show");
+  menuIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("show");
 });
 // loading animation
 window.addEventListener("load", () => {
