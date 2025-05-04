@@ -491,8 +491,6 @@ p{
 /* Hover Style */
 .resume-button:hover {
   cursor: pointer;
-  border: 2px solid white;
-  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
   background-color: #1a1540;
   /* visible on hover */
   color: white;
