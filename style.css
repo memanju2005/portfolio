@@ -388,6 +388,33 @@ p{
 
 }
 
+.proj_links{
+  display: flex;
+  
+  
+}
+.proj_links a{
+  text-decoration: none;
+  /* border: 2px solid black; */
+  color: #1670f0;
+
+}
+.proj_links button{
+  padding: 2px;
+  margin: 5px;
+  background-color: #cae0eb;
+  border-style: none;
+  color: #1670f0;
+  
+}
+/* .proj_links button a{
+  color: white;
+} */
+.proj_links button:hover{
+  transform: scale(1.1);
+  
+}
+
 /* view resume button */
 /* Section styling */
 .resume-container {
