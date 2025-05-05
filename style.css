@@ -399,12 +399,16 @@ p{
   color: #1670f0;
 
 }
+.proj_links a:hover{
+  color: #cae0eb;
+}
 .proj_links button{
   padding: 2px;
   margin: 5px;
   background-color: #cae0eb;
   border-style: none;
   color: #1670f0;
+  border-radius: 3px;
   
 }
 /* .proj_links button a{
@@ -412,7 +416,10 @@ p{
 } */
 .proj_links button:hover{
   transform: scale(1.1);
+  color: #cae0eb;
+  background-color: #1670f0;
   
+
 }
 
 /* view resume button */
