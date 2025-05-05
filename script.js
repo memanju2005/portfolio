@@ -26,4 +26,34 @@ window.addEventListener("load", () => {
     }, 500); // match the CSS transition time
   });
   
-  
+
+
+  // typing effet
+ 
+  const textToType = "Frontend developer and computer science student passionate about building responsive, user-friendly websites.";
+  const typedText = document.getElementById("typed-text");
+  const cursor = document.getElementById("cursor");
+
+  let index = 0;
+  let started = false;
+
+  function typeEffect() {
+    if (index < textToType.length) {
+      typedText.textContent += textToType.charAt(index);
+      index++;
+      const randomDelay = Math.floor(Math.random() * 80) + 30;
+      setTimeout(typeEffect, randomDelay);
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        typeEffect();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(document.getElementById("typing-target"));
+

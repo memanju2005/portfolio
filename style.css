@@ -211,6 +211,21 @@ p{
   position: relative;
 }
 
+/* typing effect */
+
+  #cursor {
+    display: inline-block;
+    color: #333;
+    animation: blink 0.8s steps(1) infinite;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+
+
 .get_to_know_me p {
   margin-top: 5rem;
 }
