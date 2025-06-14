@@ -57,3 +57,31 @@ window.addEventListener("load", () => {
 
   observer.observe(document.getElementById("typing-target"));
 
+// form disapppearing logic with thank you
+
+  const form = document.getElementById("contactForm");
+  const thankYouSection = document.getElementById("thank-you");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // 🚫 Prevents redirect
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xldnneyy", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: formData
+    });
+
+    if (response.ok) {
+      form.style.display = "none";
+      thankYouSection.style.display = "block";
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  });
+
+
+

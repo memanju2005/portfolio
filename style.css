@@ -752,3 +752,92 @@ p{
     font-size: 16px;
   }
 }
+
+/* for send message to me section */
+#contact .contact-container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#contact form fieldset {
+  border: none;
+  padding: 0;
+}
+
+#contact form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 600;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+#contact form button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #3a7bd5;
+}
+
+/* thankyou after submission */
+.thank-you-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #e6ffe6;
+  border: 1px solid #b2ffb2;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.thank-you-container h2 {
+  color: #2e7d32;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.thank-you-container p {
+  font-size: 18px;
+  color: #444;
+}
+
