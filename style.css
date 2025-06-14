@@ -843,3 +843,12 @@ p{
    align-items: center;
    justify-content: center;
 }
+
+/* for hero img */
+.hero_text img{
+ height: 250px; 
+ width: 250px; 
+ border-radius: 50%;
+ /* border: 2px solid rgb(48, 126, 156); */
+ box-shadow: #648feb 20px 20px 30px;
+}
