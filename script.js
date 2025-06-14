@@ -61,6 +61,7 @@ window.addEventListener("load", () => {
 
   const form = document.getElementById("contactForm");
   const thankYouSection = document.getElementById("thank-you");
+  const penguine=document.getElementById("penguine");
 
   form.addEventListener("submit", async function (e) {
     e.preventDefault(); // 🚫 Prevents redirect
@@ -75,12 +76,19 @@ window.addEventListener("load", () => {
       body: formData
     });
 
-    if (response.ok) {
-      form.style.display = "none";
+   if (response.ok) {
+    form.style.display = "none";
+    penguine.style.display = "flex";
+
+  // Delay the transition to thankYouSection
+    setTimeout(() => {
+      penguine.style.display = "none";
       thankYouSection.style.display = "block";
-    } else {
-      alert("Something went wrong. Please try again.");
-    }
+    }, 1000); // 1500ms = 1.5 seconds
+} else {
+  alert("Something went wrong. Please try again.");
+}
+
   });
 
 
