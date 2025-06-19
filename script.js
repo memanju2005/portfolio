@@ -92,4 +92,58 @@ window.addEventListener("load", () => {
   });
 
 
+// text nimation logic on
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const el = entry.target;
+    if (entry.isIntersecting) {
+      el.classList.remove("revealed"); // reset class
+      void el.offsetWidth; // force reflow to restart animation
+      el.classList.add("revealed");
+    }
+  });
+});
+
+document.querySelectorAll(".compress-reveal").forEach(el => {
+  observer2.observe(el);
+});
+
+//anmation of hero section  grabbing
+
+
+  window.addEventListener("load", () => {
+    // Delay observer setup for 500ms after page load
+    setTimeout(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const el = entry.target;
+          if (entry.isIntersecting) {
+            el.classList.add("visible");
+            
+
+          } 
+          // else {
+          //   el.classList.remove("visible"); // remove for re-animation
+          // }
+        });
+      });
+      
+      
+
+      document.querySelectorAll(".scroll-up-reveal").forEach(el => {
+        observer.observe(el);
+      });
+      //
+    }, 600); // 500ms delay after page load
+
+   
+  });
+
+  window.addEventListener('load',function(){
+    setTimeout(function(){
+      document.getElementById('grabhand').classList.add('hidden');
+    
+    },1800);
+  });
+
 
