@@ -702,6 +702,17 @@ p{
 
   }
 
+  /* removesd the prject button for smll screen */
+  #project_button{
+    display: none;
+  }
+
+  .hero_text h1{
+  font-size: min(5vw, 25px);
+}
+#typing-target{
+  font-size: min(4vw,12px);
+}
   
   .social_media {
     position: absolute;
